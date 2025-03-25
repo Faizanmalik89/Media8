@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <button id="menuButton">☰</button>
+        <div id="menu" class="hidden">
+            <a href="index.html">Dashboard</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="videos.html">Videos</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="terms.html">Terms & Policies</a>
+        </div>
+    </div>
+
+    <div class="content signup">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="signupMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCt-feB2K7CUnnzoOmCRMBzgFcWiN50asc",
+            authDomain: "repl-49c8a.firebaseapp.com",
+            projectId: "repl-49c8a",
+            storageBucket: "repl-49c8a.firebasestorage.app",
+            messagingSenderId: "471697952913",
+            appId: "1:471697952913:web:00a737c88257478c8e2f30",
+            measurementId: "G-JV4LZQ1VQ9"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        //Firebase signup functionality is added in the script.js file.
+    </script>
+</body>
+</html>

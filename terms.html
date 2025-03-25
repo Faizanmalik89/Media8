@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terms & Policies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <button id="menuButton">☰</button>
+        <div id="menu" class="hidden">
+            <a href="index.html">Dashboard</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="videos.html">Videos</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="terms.html">Terms & Policies</a>
+        </div>
+    </div>
+
+    <div class="content terms">
+        <h1>Terms and Policies</h1>
+        <p>This page contains the terms and policies of your website. Please read them carefully.</p>
+
+        <h2>Terms of Use</h2>
+        <p>Your terms of use here...</p>
+
+        <h2>Privacy Policy</h2>
+        <p>Your privacy policy here...</p>
+
+        <h2>Cookie Policy</h2>
+        <p>Your cookie policy here...</p>
+
+        </div>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCt-feB2K7CUnnzoOmCRMBzgFcWiN50asc",
+            authDomain: "repl-49c8a.firebaseapp.com",
+            projectId: "repl-49c8a",
+            storageBucket: "repl-49c8a.firebasestorage.app",
+            messagingSenderId: "471697952913",
+            appId: "1:471697952913:web:00a737c88257478c8e2f30",
+            measurementId: "G-JV4LZQ1VQ9"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+    </script>
+</body>
+</html>
